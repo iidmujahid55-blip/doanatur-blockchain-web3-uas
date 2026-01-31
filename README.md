@@ -55,56 +55,6 @@ Blockchain Ethereum menyediakan mekanisme **trustless system**, sehingga keperca
 - Express.js
 - REST API (transaction logs)
 
----
-
-## 📁 Struktur Folder
-WEB3-OPEN-DONASI/
-│
-├── backend/
-│   ├── node_modules/
-│   ├── routes/
-        └── donation.js
-│   │   └── transactions.js
-│   ├── index.js
-│   ├── package.json
-│   └── package-lock.json
-│
-├── frontend/
-│   ├── node_modules/
-│   ├── public/
-        └── favicon.ico
-        └── index.html
-        └── logo192.png
-│   │   └── logo512.png
-        └── manifest.json
-        └── robots.tsx
-│   ├── src/
-│   │   ├── component/
-│   │   │   ├── Wallet.js
-            ├── Wallet.css
-│   │   │   ├── SendDonation.js
-│   │   │   ├── DonationList.js
-│   │   │   └── TransactionNotes.js
-│   │   │
-│   │   ├── services/
-│   │   │   └── blockchain.js
-│   │   │
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── index.js
-│   │
-│   ├── .gitignore
-│   ├── package.json
-│   └── package-lock.json
-│
-├── smart-contract/
-│   ├── OpenDonation.sol
-│   
-│   
-│
-├── README.md
-
----
 
 ## 🚀 Fitur Utama
 
@@ -211,4 +161,52 @@ React & JavaScript Developer
 ## 📄 License
 
 This project is licensed under the **MIT License**.
+
+---
+## 📁 Struktur Folder
+WEB3-OPEN-DONASI/
+│
+├── backend/
+│   ├── node_modules/
+│   ├── routes/
+│   │   ├── donation.js
+│   │   └── transactions.js
+│   ├── index.js
+│   ├── package.json
+│   └── package-lock.json
+│
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   │
+│   ├── src/
+│   │   ├── component/
+│   │   │   ├── Wallet.js
+│   │   │   ├── Wallet.css
+│   │   │   ├── SendDonation.js
+│   │   │   ├── DonationList.js
+│   │   │   └── TransactionNotes.js
+│   │   │
+│   │   ├── services/
+│   │   │   └── blockchain.js
+│   │   │
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.js
+│   │
+│   ├── .gitignore
+│   ├── package.json
+│   └── package-lock.json
+│
+├── smart-contract/
+│   └── OpenDonation.sol
+│
+├── README.md
+
 
