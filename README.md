@@ -237,7 +237,7 @@ Tahap ini memastikan aplikasi dapat berkomunikasi dengan jaringan blockchain sec
 Melakukan pengujian pada setiap bagian sistem untuk memastikan fungsionalitas berjalan dengan baik, meliputi:
 - Pengujian koneksi wallet
 - Pengujian transaksi donasi
-- Penanganan error dan warning pada React
+- Penanganan error serta warning pada React
 - Debugging konfigurasi dependency dan environment
 
 ---
