@@ -163,50 +163,102 @@ React & JavaScript Developer
 This project is licensed under the **MIT License**.
 
 ---
-## 📁 Struktur Folder
-WEB3-OPEN-DONASI/
-│
-├── backend/
-│   ├── node_modules/
-│   ├── routes/
-│   │   ├── donation.js
-│   │   └── transactions.js
-│   ├── index.js
-│   ├── package.json
-│   └── package-lock.json
-│
-├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   │   ├── favicon.ico
-│   │   ├── index.html
-│   │   ├── logo192.png
-│   │   ├── logo512.png
-│   │   ├── manifest.json
-│   │   └── robots.txt
-│   │
-│   ├── src/
-│   │   ├── component/
-│   │   │   ├── Wallet.js
-│   │   │   ├── Wallet.css
-│   │   │   ├── SendDonation.js
-│   │   │   ├── DonationList.js
-│   │   │   └── TransactionNotes.js
-│   │   │
-│   │   ├── services/
-│   │   │   └── blockchain.js
-│   │   │
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── index.js
-│   │
-│   ├── .gitignore
-│   ├── package.json
-│   └── package-lock.json
-│
-├── smart-contract/
-│   └── OpenDonation.sol
-│
-├── README.md
+## 🛠️ Langkah-Langkah Membuatan Project ini
 
+Pengembangan project **WEB3-OPEN-DONASI** dilakukan melalui beberapa tahapan terstruktur untuk memastikan sistem berjalan dengan baik dan sesuai tujuan.
+
+### 1. Perencanaan Sistem
+Tahap awal dimulai dengan menentukan tujuan aplikasi, yaitu membangun sistem donasi berbasis blockchain yang transparan dan terdesentralisasi. Pada tahap ini ditentukan arsitektur aplikasi **full-stack**, yang terdiri dari frontend, backend, dan smart contract.
+
+---
+
+### 2. Persiapan Lingkungan Pengembangan
+Menyiapkan lingkungan pengembangan dengan menginstal perangkat dan tools pendukung, antara lain:
+- Node.js dan npm
+- MetaMask sebagai wallet Ethereum
+- Library pendukung seperti React.js dan Ethers.js  
+Jaringan **Ethereum Sepolia Testnet** dipilih sebagai lingkungan simulasi transaksi.
+
+---
+
+### 3. Pembuatan Struktur Project
+Menyusun struktur folder project yang memisahkan setiap bagian sistem, yaitu:
+- **Frontend** untuk antarmuka pengguna berbasis React
+- **Backend** untuk REST API menggunakan Node.js dan Express.js
+- **Smart Contract** untuk logika donasi menggunakan Solidity  
+
+Struktur ini memudahkan pengembangan, pemeliharaan, dan pengujian sistem.
+
+---
+
+### 4. Pengembangan Smart Contract
+Membuat smart contract donasi menggunakan bahasa **Solidity** yang berfungsi untuk:
+- Menerima donasi ETH
+- Mencatat transaksi donasi ke blockchain
+- Menyediakan data donasi yang dapat dibaca oleh frontend  
+
+Smart contract dijalankan dan diuji pada jaringan Sepolia Testnet.
+
+---
+
+### 5. Pengembangan Backend
+Backend dikembangkan menggunakan **Node.js dan Express.js** dengan tujuan:
+- Menyediakan endpoint REST API
+- Mengelola data transaksi (dummy atau off-chain)
+- Mendukung kebutuhan data frontend  
+
+Backend berperan sebagai pendukung data non-blockchain.
+
+---
+
+### 6. Pengembangan Frontend
+Frontend dibangun menggunakan **React.js** dengan fitur utama:
+- Menghubungkan wallet MetaMask
+- Menampilkan saldo wallet pengguna
+- Mengirim donasi ETH
+- Menampilkan daftar dan catatan transaksi donasi  
+
+Frontend diintegrasikan dengan Ethers.js untuk berinteraksi langsung dengan blockchain.
+
+---
+
+### 7. Integrasi Blockchain
+Integrasi blockchain dilakukan menggunakan **Ethers.js**, yang mencakup:
+- Inisialisasi provider dan signer
+- Validasi jaringan Ethereum Sepolia
+- Pengiriman transaksi donasi
+- Pembacaan data dari smart contract  
+
+Tahap ini memastikan aplikasi dapat berkomunikasi dengan jaringan blockchain secara aman.
+
+---
+
+### 8. Pengujian dan Debugging
+Melakukan pengujian pada setiap bagian sistem untuk memastikan fungsionalitas berjalan dengan baik, meliputi:
+- Pengujian koneksi wallet
+- Pengujian transaksi donasi
+- Penanganan error dan warning pada React
+- Debugging konfigurasi dependency dan environment
+
+---
+
+### 9. Penyempurnaan Fitur dan Tampilan
+Melakukan penyempurnaan pada tampilan antarmuka dan fitur aplikasi agar lebih mudah digunakan, termasuk:
+- Penambahan catatan transaksi
+- Informasi status transaksi
+- Penyusunan UI yang lebih terstruktur dan informatif
+
+---
+
+### 10. Dokumentasi Project
+Tahap akhir adalah penyusunan dokumentasi dalam bentuk **README.md**, yang berisi:
+- Deskripsi project
+- Struktur folder
+- Teknologi yang digunakan
+- Langkah-langkah pengembangan
+- Tantangan teknis dan non-teknis
+
+Dokumentasi ini bertujuan untuk memudahkan pemahaman dan pengembangan lanjutan.
+
+---
 
