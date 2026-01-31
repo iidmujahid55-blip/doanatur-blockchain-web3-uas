@@ -258,7 +258,15 @@ Tahap akhir adalah penyusunan dokumentasi dalam bentuk **README.md**, yang beris
 - Langkah-langkah pengembangan
 - Tantangan teknis dan non-teknis
 
-Dokumentasi ini bertujuan untuk memudahkan pemahaman dan pengembangan lanjutan.
-
+## 📂 Structur Folder 
+├─ src/
+│ ├─ component/
+│ │ ├─ Wallet.js
+│ │ ├─ DonationList.js
+│ │ ├─ SendDonation.js
+│ │ ├─ TransactionNotes.js
+│ ├─ App.js
+│ ├─ App.css
+│ └─ index.js
 ---
 
