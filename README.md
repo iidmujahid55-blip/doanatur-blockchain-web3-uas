@@ -1,70 +1,214 @@
-# Getting Started with Create React App
+# REFLEKSI PROYEK PEMROGRAMAN WEB
+- Nama        : IID MUJAHID
+- NIM         : 241111102
+- Prodi/Kelas : Informatika 24C
+- Fakultas    : Teknologi Informasi, Universitas Nahdlatul Ulama Yogyakarta
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+# 🌐 Web3 Donasi Blockchain
 
-### `npm start`
+Platform donasi transparan berbasis **Blockchain Ethereum (Sepolia Testnet)** yang memungkinkan pengguna untuk:
+- Menghubungkan wallet (MetaMask)
+- Mengirim donasi ETH
+- Melihat daftar transaksi donasi secara transparan
+- Memverifikasi transaksi melalui Etherscan
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Project ini bertujuan untuk menerapkan konsep **Web3, desentralisasi, dan transparansi** dalam sistem donasi digital.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📌 Latar Belakang
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sistem donasi konvensional sering kali menghadapi permasalahan transparansi, di mana donatur tidak dapat memverifikasi secara langsung alur dana yang mereka kirimkan.  
+Dengan memanfaatkan teknologi Blockchain, setiap transaksi donasi dapat dicatat secara permanen, publik, dan tidak dapat dimanipulasi.
 
-### `npm run build`
+Blockchain Ethereum menyediakan mekanisme **trustless system**, sehingga kepercayaan tidak lagi bergantung pada satu pihak terpusat, melainkan pada jaringan.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎯 Tujuan Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Mengimplementasikan sistem donasi berbasis Web3
+- Mengintegrasikan wallet Ethereum (MetaMask)
+- Mengirim ETH pada jaringan Sepolia Testnet
+- Menampilkan catatan transaksi donasi secara transparan
+- Menerapkan React sebagai frontend modern
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧱 Teknologi yang Digunakan
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- CSS (tanpa Tailwind)
+- Ethers.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Blockchain
+- Ethereum Sepolia Testnet
+- MetaMask Wallet
+- Etherscan (untuk verifikasi transaksi)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Backend (Opsional)
+- Node.js
+- Express.js
+- REST API (transaction logs)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Struktur Folder
+WEB3-OPEN-DONASI/
+│
+├── backend/
+│   ├── node_modules/
+│   ├── routes/
+        └── donation.js
+│   │   └── transactions.js
+│   ├── index.js
+│   ├── package.json
+│   └── package-lock.json
+│
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+        └── favicon.ico
+        └── index.html
+        └── logo192.png
+│   │   └── logo512.png
+        └── manifest.json
+        └── robots.tsx
+│   ├── src/
+│   │   ├── component/
+│   │   │   ├── Wallet.js
+            ├── Wallet.css
+│   │   │   ├── SendDonation.js
+│   │   │   ├── DonationList.js
+│   │   │   └── TransactionNotes.js
+│   │   │
+│   │   ├── services/
+│   │   │   └── blockchain.js
+│   │   │
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.js
+│   │
+│   ├── .gitignore
+│   ├── package.json
+│   └── package-lock.json
+│
+├── smart-contract/
+│   ├── OpenDonation.sol
+│   
+│   
+│
+├── README.md
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🚀 Fitur Utama
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🔐 Wallet Integration
+- Menghubungkan wallet Ethereum menggunakan MetaMask
+- Menampilkan status koneksi wallet
 
-### Analyzing the Bundle Size
+### 💸 Kirim Donasi
+- Mengirim ETH melalui jaringan Sepolia
+- Konfirmasi transaksi langsung di MetaMask
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 📜 Catatan Transaksi
+- Menampilkan histori donasi
+- Setiap transaksi dapat diverifikasi melalui Etherscan
 
-### Making a Progressive Web App
+### 🌍 Transparansi
+- Data transaksi bersifat publik
+- Mendukung konsep open-donation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## ⚠️ Tantangan dalam Pengembangan Scara Teknis dan Non Teknis
+# Teknis
+Struktur Project Full-Stack
+Kesalahan penempatan folder dan package.json menyebabkan error seperti ENOENT dan npm start gagal dijalankan.
+React Hooks & State Management
+Penggunaan useEffect memerlukan dependency yang tepat agar data transaksi dan pagination berjalan sinkron.
+Integrasi Wallet & Blockchain
+Menghubungkan MetaMask dengan React memerlukan validasi jaringan (Sepolia) serta penanganan akun dan izin wallet.
+Perbedaan Versi Ethers.js
+Perubahan API antara Ethers v5 dan v6 menimbulkan error dan membutuhkan penyesuaian kode.
+Asynchronous Transaction Handling
+Transaksi blockchain bersifat tidak instan sehingga perlu pengelolaan loading, konfirmasi, dan error state.
+Sinkronisasi Data On-Chain & Off-Chain
+Menyatukan data blockchain dan API backend membutuhkan format dan waktu update yang konsisten.
+UI Tanpa Framework CSS
+Mendesain tampilan manual menuntut konsistensi dan kete
+# Non-Teknis
+Kurva Pembelajaran Web3
+Konsep blockchain, wallet, dan smart contract membutuhkan waktu untuk dipahami secara menyeluruh.
+Manajemen Waktu & Fokus
+Pengembangan full-stack memerlukan pembagian waktu antara frontend, backend, dan blockchain.
+Desain User Experience (UX)
+Menyederhanakan konsep blockchain agar mudah dipahami oleh pengguna awam
+Debugging & Problem Solving
+Membutuhkan ketelitian dan kesabaran karena error sering muncul dari berbagai layer sistem.
+Perencanaan Pengembangan
+Menentukan prioritas fitur agar project tetap terarah dan selesai tepat waktu.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 1. Konfigurasi Project React
+- Error `Missing script: start`
+- Struktur folder tidak sesuai dengan `package.json`
+- Kesalahan import komponen
 
-### Deployment
+### 2. Integrasi Web3 & MetaMask
+- Perbedaan API `ethers v5` dan `ethers v6`
+- Penanganan async transaction (`await tx.wait()`)
+- Validasi jaringan Sepolia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 3. Error React Hooks
+- Warning `react-hooks/exhaustive-deps`
+- Penggunaan `useEffect` dengan dependency yang tidak lengkap
 
-### `npm run build` fails to minify
+### 4. UI/UX
+- Mendesain tampilan tanpa framework CSS
+- Menjaga UI tetap bersih dan mudah dipahami
+- Menyusun komponen agar scalable
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 5. Transparansi Data
+- Sinkronisasi data on-chain dan off-chain
+- Menampilkan data transaksi dalam bentuk yang mudah dibaca pengguna awam
+
+---
+
+## 🧠 Pembelajaran yang Didapat
+
+- Pemahaman dasar Web3 dan Blockchain
+- Cara kerja wallet dan transaksi Ethereum
+- Integrasi React dengan blockchain
+- Manajemen state dan lifecycle React
+- Debugging error pada environment JavaScript modern
+
+---
+
+## 🔮 Pengembangan Selanjutnya
+
+- Integrasi Smart Contract khusus donasi
+- Listener event on-chain (DonationEvent)
+- Penyimpanan transaksi ke database
+- Support multi-network (Polygon, BSC)
+- Dashboard analitik donasi
+- Deployment ke production
+
+---
+
+## 👨‍💻 Author
+
+**Iid Mujahid**  
+Web3 & Blockchain Enthusiast  
+React & JavaScript Developer  
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+

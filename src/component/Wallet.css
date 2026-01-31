@@ -1,0 +1,25 @@
+.wallet-btn {
+  background: linear-gradient(90deg, #7c3aed, #5b21b6);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.wallet-btn:hover {
+  transform: translateY(-1px);
+}
+
+.address {
+  font-family: monospace;
+  word-break: break-all;
+  font-size: 14px;
+  color: #cfe9ff;
+}
+
+.balance {
+  color: #86efac;
+  margin-top: 8px;
+  font-weight:600;
+}

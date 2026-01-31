@@ -1,0 +1,37 @@
+/* TransactionNotes styles */
+.tx-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.tx-table thead th {
+  text-align: left;
+  padding: 10px 12px;
+  color: #cfe9ff;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.tx-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.02);
+  vertical-align: middle;
+  color: #e6eef8;
+}
+
+.tx-table tbody tr:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+.status {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+.status.success { background: rgba(34,197,94,0.12); color: #9ff5b6; }
+.status.pending { background: rgba(234,179,8,0.08); color: #ffd98a; }
+
+.txhash { font-family: monospace; color: #cfe9ff }
+.empty { color: #9aa4b2; padding: 12px 0 }
+
